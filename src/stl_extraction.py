@@ -29,6 +29,10 @@ def len_width_hight(your_mesh):
 
 
 def circle_radius(a, b, c):
+    """
+    This function will calculate the radius of the given stl object's
+    length, width and height.
+    """
     # the sides cannot be negative
     if a < 0 or b < 0 or c < 0:
         return None

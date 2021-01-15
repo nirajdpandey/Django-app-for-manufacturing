@@ -9,6 +9,10 @@ from src import stl_calculation
 
 
 def upload_file(request):
+    """
+    This is the main function which will use all the helper function to
+    extract the data from stl file.
+    """
     if request.method == 'POST' and request.FILES['myfile']:
         myfile = request.FILES['myfile']
         fs = FileSystemStorage(location='files/')
